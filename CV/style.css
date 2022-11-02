@@ -1,6 +1,6 @@
 @font-face {
   font-family: "UbuntuRegular";
-  src: url(/CV/assets/fonts/UbuntuCondensed-Regular.ttf);
+  src: url(../assets/fonts/UbuntuCondensed-Regular.ttf);
 }
 
 * {
@@ -14,11 +14,13 @@ body {
   background: #000101;
 }
 .navbar {
+  font-family: "UbuntuRegular";
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 .navbar a {
+  font-family: "UbuntuRegular";
   padding: 20px;
   text-decoration: none;
   list-style: none;

@@ -1,0 +1,64 @@
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  cursor: crosshair;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: anim 8s forwards;
+  filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    left: var(--left);
+    opacity: 1;
+    filter: hue-rotate(720deg) contrast(170%) brightness(130%) saturate(130%);
+  }
+}
+
+h3 {
+  font-size: 10rem;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(194, 194, 194);
+  user-select: none;
+  height: 100px;
+  position: relative;
+}
+h4 {
+  position: absolute;
+  font-size: 2rem;
+  top: 90%;
+  user-select: none;
+}
+
+#background {
+  background: rgba(24, 24, 24, 0.911);
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+}
+
+#misscounter {
+  color: rgb(194, 194, 194);
+  position: relative;
+  width: 200px;
+  height: 200px;
+  user-select: none;
+  font-size: calc(0.5rem + 1vw);
+  z-index: 1000;
+  line-height: 2px;
+  text-align: center;
+}
+
+#misscounter p {
+  font-size: calc(1rem + 1vw);
+}

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "UbuntuRegular";
-  src: url(/assets/fonts/UbuntuCondensed-Regular.ttf);
+  src: url(/CV/assets/fonts/UbuntuCondensed-Regular.ttf);
 }
 
 * {
@@ -16,7 +16,6 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
   position: relative;
 }
 .navbar a {
@@ -27,15 +26,14 @@ body {
   font-size: calc(0.8rem + 0.8vw);
 }
 .navbar a:hover {
-  color: #bfdafa;
+  transform: scale(1.1);
   transition: 0.4s ease-in-out;
 }
 .cv {
   width: 100vw;
   height: 100vh;
-  justify-content: center;
   text-align: center;
 }
 .cv img {
-  max-width: 35%;
+  max-width: 55%;
 }
